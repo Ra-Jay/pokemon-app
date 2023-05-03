@@ -1,0 +1,118 @@
+@use '../../styles' as *;
+
+.Text {
+  &___heading {
+    &___xxl {
+      @include heading(40px, 125);
+    }
+
+    &___xl {
+      @include heading(36px, 1.142);
+    }
+
+    &___lg {
+      @include heading(32px, 1.167);
+    }
+
+    &___md {
+      @include heading(28px, 1.1);
+    }
+
+    &___sm {
+      @include heading(24px, 1.125);
+    }
+
+    &___xs {
+      @include heading(20px, 1.167);
+    }
+
+    &___xxs {
+      @include heading(18px, 1.2);
+    }
+
+    &___xxxs {
+      @include heading(16px, 1.25);
+    }
+  }
+
+  &___body {
+    &___lg {
+      @include body(1.125rem, 2);
+    }
+
+    &___md {
+      @include body(1rem, 1.5);
+    }
+
+    &___sm {
+      @include body(0.875rem, 1.5);
+    }
+
+    &___xs {
+      @include body(0.75rem, 1.5);
+    }
+  }
+
+  // &___strong {
+  //   &___lg {
+  //     @include strong(1.125rem, 2);
+  //   }
+
+  //   &___md {
+  //     @include strong(1rem, 1.5);
+  //   }
+
+  //   &___sm {
+  //     @include strong(0.875rem, 1.5);
+  //   }
+
+  //   &___xs {
+  //     @include strong(0.75rem, 1.5);
+  //   }
+  // }
+
+  // &___data {
+  //   &___lg {
+  //     @include data(1.125rem, 1.5);
+  //   }
+
+  //   &___md {
+  //     @include data(1rem, 1.5);
+  //   }
+
+  //   &___sm {
+  //     @include data(0.875rem, 1.5);
+  //   }
+
+  //   &___xs {
+  //     @include data(0.75rem, 1.5);
+  //   }
+  // }
+
+  &___misc {
+    &___button {
+      font-family: Montserrat;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  
+  // &___y___500 {
+  //   color: $yellow-200 !important;
+  // }
+
+  // &___b___500 {
+  //   color: $brown-500 !important;
+  // }
+
+  // &___b___100 {
+  //   color: $brown-100 !important;
+  // }
+
+  // &___r___200 {
+  //   color: $red-200 !important;
+  // }
+
+}

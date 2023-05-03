@@ -1,0 +1,43 @@
+@use '../../styles' as *;
+
+.tile {
+    background-color: $white;
+    border-radius: 10px;
+    height: 80px;
+    margin: 5px;
+    padding: 10px;
+    width: 70px;
+    transition: 300ms;
+    box-shadow: $shadow-normal;
+}
+
+.tile-image {
+    height: auto;
+    width: 100%;
+}
+
+.tile-title {
+    color: $black;
+    margin: 0;
+    transition: 300ms;
+}
+
+// .selected-item { 
+//     background-color: $secondary;
+//     height: 120px;  
+//     width: 100px;
+//     animation-name: example;
+//     animation-duration: 1s;
+//     transform: scale(1,1);
+    
+//     .tile-title {
+//         color: $white;
+//         font-size: 1.1rem;
+//     }
+// }
+
+
+// @keyframes example {
+//     0%   {background-color: $white;}
+//     100% {background-color: $secondary;}
+//   }

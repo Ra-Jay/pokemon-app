@@ -1,0 +1,8 @@
+@use '../styles' as *;
+@import './font';
+
+.App{
+    @include flex-center;
+    height: 100vh;
+}
+

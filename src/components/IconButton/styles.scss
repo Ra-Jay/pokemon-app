@@ -1,0 +1,15 @@
+@use '../../styles/' as *;
+
+.btn {
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+    color: $secondary;
+    cursor: pointer;
+    height: 40px;
+    left: 50px;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    width: 40px;
+}

@@ -1,0 +1,235 @@
+@use '../../styles' as *;
+
+.container {
+    background-color: $primary;
+    display: flex;
+    height: 100vh;
+    padding-top: 80px;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+      width: 300px;
+      height: auto;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .offset {
+
+      &-btn{
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .pokemon-list {
+        flex: 1;
+        @include flex-center;
+        flex-direction: column;
+    }
+    .pokemon-data {
+        flex: 3;
+        @include flex-between;
+        text-align: left;
+
+        .pokemon-description {
+          flex: 1;
+
+          .pokemon-moves {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              column-gap: 50px;
+              text-align: left;
+          }
+
+          .type-container {
+              display: flex;
+
+              .pokemon-type {
+                flex: 1;
+                background-color: $white;
+                border-radius: 5px;
+                margin-right: 15px;
+                text-align: center;
+                @include flex-center;
+              }
+          }
+        }
+
+        .image-container {
+          flex: 2;
+          @include flex-center;
+
+          .pokemon-image {
+              width: auto;
+              height: 400px;
+              max-width: 400px;
+
+              .image-container {
+                  @include flex-center;
+              }
+          }
+        }
+
+        .vl {
+            @include flex-center;
+            border: 1px solid $black;
+            border-left: 0;
+            width: 100px;
+            height:  400px;
+            writing-mode: vertical-lr;
+            position: relative;
+
+            .height {
+                text-orientation: mixed;
+                position: absolute;
+                right: 50;
+            }
+        }
+    }
+}
+
+.bg-text {
+  position: absolute;
+  color: $white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  font-weight: bold;
+  text-transform: capitalize;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.grass {
+  background-color: $grass!important;
+}
+
+.fire {
+  background-color: $fire!important;
+}
+
+.water {
+  background-color: $water!important;
+}
+
+.bug {
+  background-color: $bug!important;
+}
+
+.normal {
+  background-color: $normal!important;
+}
+
+.poison {
+  background-color: $poison!important;
+}
+
+.electric {
+  background-color: $electric!important;
+}
+
+.ground {
+  background-color: $ground!important;
+}
+
+.fairy {
+  background-color: $fairy!important;
+}
+
+.fighting {
+  background-color: $fighting!important;
+}
+
+.psychic {
+  background-color: $psychic!important;
+}
+
+.rock {
+  background-color: $rock!important;
+}
+
+.ghost {
+  background-color: $ghost!important;
+}
+
+.ice {
+  background-color: $ice;
+}
+
+.dragon {
+  background-color: $dragon!important;
+}
+
+.slick-prev,
+.slick-next {
+  height: 40px !important;
+  width: 40px !important;
+  position: absolute!important;
+  right: 50px!important;
+  left: 50px!important;
+}
+
+.slick-next {
+  bottom: 40px!important;
+  transform: rotate(90deg)!important;
+}
+
+.slick-prev {
+  top: 275px!important;
+  transform: rotate(90deg)!important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: $white !important;
+  font-size: 30px !important;
+}
+
+.slick-slide {
+  // height: 300px; /* set the height of each slide */
+  width: 50%;
+}
+
+.slick-center > div > div {
+  background-color: $secondary;
+  // height: 100px;  
+  // width: 80px;
+  animation-name: example;
+  animation-duration: 1s;
+  transform: scale(1.1,1.1);
+  margin: 10px 0;
+
+  > img {
+    transform: scale(1.2,1.2);
+  }
+
+  > h6 {
+    color: $white
+  }
+}
+
+.slick-list {
+  padding: 0 0 0 10px!important;
+  width: 50%;
+}
+
+.slick-track {
+  top: 38px!important
+}
+
+@keyframes example {
+  0%   {background-color: $white;}
+  100% {background-color: $secondary;}
+}

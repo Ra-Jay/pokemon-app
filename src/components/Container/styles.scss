@@ -1,0 +1,9 @@
+@use '../../styles' as *;
+
+.Container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 390px !important;
+  animation: fadeIn 0.5s ease-in;
+
+}
